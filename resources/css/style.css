@@ -117,7 +117,7 @@ h2:after {
     display: inline-block;
     width: 30px;
     text-align: center;
-    color: #e67e22;
+    color: #fff;
     font-size: 120%;
     margin-right: 10px;
 
@@ -125,6 +125,19 @@ h2:after {
     line-height: 120%;
     vertical-align: middle;
     margin-top: -5px;
+}
+
+.icon-heading {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  color: #fff;
+  font-size: 120%;
+  margin-right: 10px;
+  line-height: 120%;
+  vertical-align: middle;
+  margin-top: 20px;
+  padding-left: 33px;
 }
 
 /* ----- LINKS ----- */
@@ -201,18 +214,29 @@ header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 95vh;
     background-attachment: fixed;
 }
 
-.hero-text-box {
-  position: relative;
+.hero-icons {
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  z-index: 15;
+  top: 95%;
   left: 50%;
-  top: 50%;
-  float: left;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  margin: -100px 0 0 -150px;
+  padding-left: 10px;
+}
+
+.hero-text-box {
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  z-index: 15;
+  top: 60%;
+  left: 50%;
+  margin: -100px 0 0 -150px;
 }
 
 .hero-text-box h1 {
@@ -220,18 +244,21 @@ header {
 }
 .hero-text-box h6 {
   color: #fff;
-  padding-left: 60px;
+  padding-left: 40px;
+  font-size: 100%;
 }
 
-.left-title {
-  position: relative;
-  left: 41%;
-  float: left;
-  margin-top: 40px;
+.center-title {
+  position: absolute;
+  width: 500px;
+  height: 200px;
+  z-index: 15;
+  top: 18%;
+  left: 50%;
+  margin: -100px 0 0 -150px;
   color: #fff;
   text-transform: uppercase;
-  font-size: 140%;
-
+  font-size: 200%;
 }
 
 .logo {
