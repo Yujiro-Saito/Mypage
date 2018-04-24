@@ -215,9 +215,17 @@ header {
   transform: translate(-50%, -50%);
 }
 
+.hero-text-box h1 {
+  font-size: 200%;
+}
+.hero-text-box h6 {
+  color: #fff;
+  padding-left: 60px;
+}
+
 .left-title {
   position: relative;
-  left: 50%;
+  left: 41%;
   float: left;
   margin-top: 40px;
   color: #fff;
@@ -245,7 +253,7 @@ header {
 .main-nav {
     float: right;
     list-style: none;
-    margin-top: 20px;
+    margin-top: 42px;
 }
 
 .main-nav li {
